@@ -20,7 +20,10 @@ repositories {
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
+    // NOTE: Swagger 사용하기 위해 추가 (테스트 마친 후 제거할 것)
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.14")
+
+    implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
